@@ -10,6 +10,5 @@ jobs:
       - uses: imjasonh/setup-crane@v0.4
       - run: |
           crane auth login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
-          crane copy ghcr.io/diodonfrost/exherbo-ci-rust:latest \
-            ghcr.io/${{ GitHub.repository_owner }}/
-exherbo-ci-rust:latest
+          crane copy ghcr.io/diodonfrost/exherbo-ci-rust:latest \ 
+          ghcr.io/${{ github.repository_owner }}/exherbo-ci-rust:latest
